@@ -120,6 +120,7 @@ html, body, #viewDiv {
     }
 
     #maps-button {
+        display: block;
         background-color: #0079c1;
         position: absolute;
         z-index: 11;
