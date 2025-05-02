@@ -5,6 +5,10 @@ html, body, #viewDiv {
     width: 100%;
     font-family: "Roboto", sans-serif;
   }
+
+  #maps-button {
+    display: none;
+  }
   
   #map-selection {
     display: flex;
@@ -62,14 +66,41 @@ html, body, #viewDiv {
     width: 100%;
   }
 
+  #viewDiv > div.esri-view-root > div.esri-ui.calcite-mode-light > div.esri-ui-inner-container.esri-ui-manual-container > div.esri-component.esri-popup.esri-popup--is-docked.esri-popup--is-docked-bottom-center > div {
+    display: none;
+  }
   
   @media only screen and (max-width: 768px) {
     .container {
-      top: 65vh;
+      display: flex;
+      top: 55vh;
       width: 90vw;
+      height: 18.5vh !important;
       padding: 2.5vw;
       align-items: left;
     }
+
+    #maps-container {
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: bottom left;
+        transition: opacity 0.1s ease, transform 0.2s ease;
+        pointer-events: none;
+    }
+    
+    #maps-container.show {
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: auto;
+    }
+    
+    #maps-container.hide {
+        opacity: 0;
+        transform: scale(0);
+        pointer-events: none;
+    }
+        
+    
   
     .selected-map-thumb {
       display: none;
@@ -85,7 +116,23 @@ html, body, #viewDiv {
   
     .map-thumb {
       width: 19.5vw;
-      height: 6vh;
+      height: 8vh;
     }
+
+    #maps-button {
+        background-color: #0079c1;
+        position: absolute;
+        z-index: 11;
+        top: 76.25vh;
+        margin: 2.5vw;
+        border-radius: 8px;
+        border: none;
+        width: 50px;
+        height: 50px;
+      }
+    
+      #maps-button > img {
+        width: 20px;
+        height: 20px;
+      }
   }
-  

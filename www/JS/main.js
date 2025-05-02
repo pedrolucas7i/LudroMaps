@@ -78,3 +78,17 @@ const basemapList = [
     UpdateMap();
   });
   
+  function showMaps() {
+    const mapsContainer = document.getElementById("maps-container");
+  
+    if (mapsContainer.classList.contains("hide") || mapsContainer.style.opacity === "0") {
+      mapsContainer.classList.remove("hide");
+      mapsContainer.classList.add("show");
+    } else {
+      mapsContainer.classList.remove("show");
+      mapsContainer.classList.add("hide");
+    }
+  }
+  
+
+
