@@ -3,14 +3,14 @@
   <name>LudroMaps</name>
   <description>A Maps App</description>
 
-  <!-- Splash Screen Settings -->
+  <!-- Splash Screen Settings --> 
   <preference name="SplashScreenDelay" value="2000" />
   <preference name="AutoHideSplashScreen" value="true" />
-  <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/splashTemplate.png" />
-  <preference name="AndroidWindowSplashScreenBackground" value="#000000" />
+  <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/splashTemplate.jpg" />
+  <preference name="AndroidWindowSplashScreenBackground" value="#ffffff" />
 
   <!-- App Icon -->
-  <icon src="resources/iconTemplate.png" />
+  <icon src="resources/iconTemplate.jpg" />
 
   <!-- Cordova Plugins -->
   <plugin name="cordova-plugin-device" />
