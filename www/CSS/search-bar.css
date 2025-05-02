@@ -1,0 +1,93 @@
+.esri-search .esri-search__input {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-left: -250px;
+    border-radius: 10px;
+  }
+  
+  .esri-search .esri-search__submit-button {
+    background-color: #0079c1;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  
+  .esri-search .esri-search__suggestions-menu {
+    background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 500px;
+    margin-left: -250px;
+    border-radius: 10px;
+  }
+  
+  .esri-search .esri-search__suggestions-menu li {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #333333;
+  }
+  
+  .esri-search .esri-search__suggestions-menu li:hover {
+    background-color: #e6f2f8;
+  }
+  
+  .esri-search {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  #viewDiv > div.esri-view-root > div.esri-ui.calcite-mode-light > div.esri-ui-inner-container.esri-ui-manual-container > div.esri-component.esri-search.esri-widget {
+    background-color: transparent !important;
+    color: transparent !important;
+  }
+  
+  #viewDiv > div.esri-view-root > div.esri-ui.calcite-mode-light > div.esri-ui-inner-container.esri-ui-corner-container > div.esri-ui-top-right.esri-ui-corner > div {
+    background-color: transparent !important;
+    color: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  #viewDiv > div.esri-view-root > div.esri-ui.calcite-mode-light > div.esri-ui-inner-container.esri-ui-manual-container > div.esri-component.esri-search.esri-widget > div > div.esri-search__input-container > button {
+      display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+      #viewDiv > div.esri-view-root > div.esri-ui.calcite-mode-light > div.esri-ui-inner-container.esri-ui-manual-container > div.esri-component.esri-search.esri-widget {
+          width: 82vw;
+          background-color: transparent;
+      }
+      .esri-search .esri-search__input {
+          width: 85vw;
+          margin-left: -7.5vw !important;
+          border-radius: 10px;
+        }
+      .esri-search .esri-search__suggestions-menu {
+          background-color: #f9f9f9;
+          border: 1px solid #cccccc;
+          border-radius: 4px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+          width: 90vw;
+          margin-left: -7.5vw !important;
+          border-radius: 10px;
+    }
+    
+    #viewDiv > div.esri-view-root > div.esri-ui.calcite-mode-light > div.esri-ui-inner-container.esri-ui-corner-container > div.esri-ui-top-left.esri-ui-corner {
+        display: none;
+    }
+    
+    #viewDiv > div.esri-view-root > div.esri-ui.calcite-mode-light > div.esri-ui-inner-container.esri-ui-manual-container > div.esri-component.esri-search.esri-widget > div > div.esri-search__input-container > button {
+      display: none;
+    }
+  }

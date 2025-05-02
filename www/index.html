@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LudroMaps</title>
+  
+    <!-- Data Range Picker-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <!-- ArcGIS JS API -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.29/"></script>
+
+    <!-- Custom CSS -->
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="CSS/search-bar.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="map-selection"><img src="" alt=""></button>
+    <div class="container">
+        <!-- Map Selection Section -->
+        <div id="map-selection">
+            <img id="mapImage" src="" alt="Selected Map Thumbnail" class="selected-map-thumb" />
+            <div id="availableMaps" class="map-thumbnails"></div>
+        </div>
+    </div>
+    <!-- Map Display Area -->
+    <div id="viewDiv"></div>
+
+    <!-- JS Script -->
+    <script src="JS/main.js" type="text/javascript" onload></script>
+</body>
+</html>

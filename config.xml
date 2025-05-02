@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.pedrolucas7i.ludromaps" xmlns="http://www.w3.org/ns/widgets" version="1.0.0">
+  <name>LudroMaps</name>
+  <description>A Maps App</description>
+
+  <!-- Splash Screen Settings -->
+  <preference name="SplashScreenDelay" value="2000" />
+  <preference name="AutoHideSplashScreen" value="true" />
+  <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/splashTemplate.png" />
+  <preference name="AndroidWindowSplashScreenBackground" value="#000000" />
+
+  <!-- App Icon -->
+  <icon src="resources/iconTemplate.png" />
+
+  <!-- Cordova Plugins -->
+  <plugin name="cordova-plugin-device" />
+
+  <!-- Access Permissions -->
+  <access origin="*" />
+</widget>

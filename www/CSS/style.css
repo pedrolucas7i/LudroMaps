@@ -1,0 +1,91 @@
+html, body, #viewDiv {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  #map-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .selected-map-thumb {
+    width: 215px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  #availableMaps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 215px;
+    justify-items: center;
+  }
+  
+  .map-thumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .map-thumb:hover {
+    transform: scale(1.05);
+  }
+  
+  .container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #two-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      top: 65vh;
+      width: 90vw;
+      padding: 2.5vw;
+      align-items: left;
+    }
+  
+    .selected-map-thumb {
+      display: none;
+    }
+  
+    #availableMaps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        max-width: 215px;
+        justify-items: center;
+      }
+  
+    .map-thumb {
+      width: 19.5vw;
+      height: 6vh;
+    }
+  }
+  
